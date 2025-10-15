@@ -10,7 +10,8 @@ function UserList({ users, onUserClick }) {
       </Alert>
     )
   }
-  return(<Row> {users.map(user => (<col className='md={6} lg={4} mb-4'><UserCard user={user} onUserClick={onUserClick} /></col>))}</Row>)
+  return(<Row> {users.map(user => (<col className='md={6} lg={4} mb-4'>
+    <UserCard user={user} onUserClick={onUserClick} /></col>))}</Row>)
 
 }
 
